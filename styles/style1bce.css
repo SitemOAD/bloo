@@ -24,6 +24,29 @@ body {
   background-color: #80aad3;
 }
 
+.element {
+  font-family: 'Milk Kids', bold;
+  color: #ffffff;
+  border: 2px #000000 solid;
+  font-size: 25px;
+  background-color: rgb(83, 147, 211);
+  border-radius: 5px;
+  box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+  padding: 1px;
+  width: 700px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -3%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1540px;
