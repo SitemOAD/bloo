@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.raise:hover {
+  transform: translateY(-0.25rem);
+}
+
+body, html {
+  background-color: #A6CFF6 !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.marquee {
+  --gap: 0.5rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.blueBG {
+  background-image: url("../../public/bluebg.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.FooterImage {
+  width: 100%;
+  height: auto;
+}
+
+.headerBG {
+  background-image: url("../../public/background 1.png");
+  background-size: contain;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.bgMain {
+  background-image:url("../../public/mainBG.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.footerBG {
+  background-image:url("../../public/background 3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1400px) {
+  .headerBG {
+    background-size: cover;
+  }
+}
