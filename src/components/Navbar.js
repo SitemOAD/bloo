@@ -11,7 +11,7 @@ const Navbar = () => {
                 <a target="_blank" href="https://twitter.com/bloofostercoin" className="raise ease duration-300"><Image className="ml-1" src="/x.png" alt="telegram" width={90} height={75} /></a>
                 <a target="_blank" href="https://warpcast.com/bloofoster" className="raise ease duration-300"><Image src="/w.png" alt="telegram" width={90} height={75} /></a>
             </div>
-            <Link href="" className="hidden raise ease duration-300 md:block mt-3"><Image src="/buy 1.png" alt="telegram" width={150} height={75} /></Link>
+            <Link href="https://app.uniswap.org/swap?outputCurrency=0x8a5F9a6b653ecbDb406f9EB5F0C8dDba10919Aec&chain=base" className="hidden raise ease duration-300 md:block mt-3"><Image src="/buy 1.png" alt="telegram" width={150} height={75} /></Link>
         </nav>
     );
 };
